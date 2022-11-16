@@ -1,0 +1,18 @@
+
+
+parameters:
+  routes:
+    phpinfo:
+      method: GET
+      path: '/phpinfo'
+      controller: '@Loopia\App\Controllers\Phpinfo'
+    homepage:
+      method: GET
+      path: '/'
+      controller: '@Loopia\App\Controllers\Homepage'
+    details:
+      method: GET
+      path: '/item/{id:\d+}'
+      controller: '@Loopia\App\Controllers\FilmDetails'
+
+
